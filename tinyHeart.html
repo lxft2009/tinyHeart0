@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tinyHeart</title>
+    <style type="text/css">
+        /*body {*/
+            /*padding-top: 10px;*/
+        /*}*/
+        .all_bg {
+            width: 800px;
+            height: 600px;
+            margin: 0px auto;
+        }
+        #allcanvas {
+            position: relative;
+            width: 800px;
+            height: 600px;
+            margin: 0px;
+        }
+        #canvas1 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+        }
+        #canvas2 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 0;
+        }
+        #play_1,#pause_1 {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="all_bg">
+        <div id = "allcanvas">
+            <canvas id = "canvas1" width="800" height="600"></canvas>
+            <canvas id = "canvas2" width="800" height="600"></canvas>
+            <img id="play_1" src="./src/play_2.png" onclick='playGame()'/>
+            <img id="pause_1" src="./src/pause_2.png"  style="visibility: hidden"/>
+        </div>
+        <audio id = 'back' src="./audio/back2.wav" autoplay loop="loop"></audio>
+        <audio id = 'swim' src="./audio/swim.wav" autoplay loop="loop"></audio>
+        <audio id = 'sound' autoplay ></audio>
+        <audio id = 'gameOver' src="./audio/gameOver2.mp3" ></audio>
+    </div>
+    <script type = "text/javascript" src = "jQuery/jquery-3.1.1.min.js"></script>
+    <script type = "text/javascript" src = "js/main.js"></script>
+    <script type = "text/javascript" src = "js/commonFunctions.js"></script>
+    <script type = "text/javascript" src = "js/background.js"></script>
+    <script type = "text/javascript" src = "js/anemone.js"></script>
+    <script type = "text/javascript" src = "js/fruit.js"></script>
+    <script type = "text/javascript" src = "js/mom.js"></script>
+    <script type = "text/javascript" src = "js/collision.js"></script>
+    <script type = "text/javascript" src = "js/baby1.js"></script>
+    <script type = "text/javascript" src = "js/baby2.js"></script>
+    <script type = "text/javascript" src = "js/data.js"></script>
+    <script type = "text/javascript" src = "js/wave.js"></script>
+    <script type = "text/javascript" src = "js/halo.js"></script>
+    <script type = "text/javascript" src = "js/dust.js"></script>
+</body>
+</html>
